@@ -51,36 +51,35 @@ const PackageCard = ({
         </Typography>
       </Box>
 
-<Box sx={{ display: "flex", gap: 1 }}>
-  <Button
-    variant="outlined"
-    sx={{
-      flex: 1,
-      textTransform: "none",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: 0.5,
-    }}
-  >
-    Add to Cart <span>+</span>
-  </Button>
+      <Box sx={{ display: "flex", gap: 1 }}>
+        <Button
+          variant="outlined"
+          sx={{
+            flex: 1,
+            textTransform: "none",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 0.5,
+          }}
+        >
+          Add to Cart <span>+</span>
+        </Button>
 
-  <Button
-    variant="contained"
-    sx={{
-      flex: 1,
-      textTransform: "none",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: 0.5,
-    }}
-  >
-    Book Now <span>→</span>
-  </Button>
-</Box>
-
+        <Button
+          variant="contained"
+          sx={{
+            flex: 1,
+            textTransform: "none",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 0.5,
+          }}
+        >
+          Book Now <span>→</span>
+        </Button>
+      </Box>
     </Box>
   );
 };

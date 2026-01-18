@@ -17,7 +17,7 @@ const ChooseUsCard = ({ icon, label }) => {
         }}
       >
         <Image src={icon} width={40} height={40} alt={label} />
-      <Typography fontWeight={500}>{label}</Typography>
+        <Typography fontWeight={500}>{label}</Typography>
       </Box>
     </Box>
   );

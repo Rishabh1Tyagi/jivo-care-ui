@@ -1,4 +1,4 @@
-import { Box, Typography, Button, } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import CategoryCard from "../Card/CategoryCard";
 // import logo
 import DefaultIcon from "@/public/globe.svg";
@@ -20,7 +20,7 @@ const categories = [
 
 const SectionLayout = () => {
   return (
-    <Box sx={{ mt: 1, p:8, background:"#FAFAFA" }}>
+    <Box sx={{ mt: 1, p: 8, background: "#FAFAFA" }}>
       <Box
         sx={{
           display: "flex",
@@ -29,44 +29,40 @@ const SectionLayout = () => {
           mb: 3,
         }}
       >
-        <Box style={{ marginLeft:"20px" }}>
+        <Box style={{ marginLeft: "20px" }}>
           <Typography variant="h5" fontWeight="bold">
             Advanced Diagnostic Tests for Your Body’s Vital Organs
           </Typography>
           <Typography variant="body2" sx={{ mt: 0.5, color: "gray" }}>
-            Explore our comprehensive range of diagnostic tests tailored for vital body organs.
+            Explore our comprehensive range of diagnostic tests tailored for
+            vital body organs.
           </Typography>
         </Box>
 
-        <Button variant="outlined"
-        style={{ marginRight:"30px" }} 
-        // endIcon={<ArrowForwardIcon />}
+        <Button
+          variant="outlined"
+          style={{ marginRight: "30px" }}
+          // endIcon={<ArrowForwardIcon />}
         >
           View All
         </Button>
       </Box>
 
-      {/* Cards Row */}
       <Box
         sx={{
           display: "flex",
-          justifyContent:"space-around",
+          justifyContent: "space-around",
           gap: 3,
           overflowX: "auto",
           pb: 1,
         }}
       >
         {categories.map((item, index) => (
-          <CategoryCard
-            key={index}
-            icon={item.icon}
-            label={item.label}
-          />
+          <CategoryCard key={index} icon={item.icon} label={item.label} />
         ))}
       </Box>
     </Box>
   );
-}
-
+};
 
 export default SectionLayout;

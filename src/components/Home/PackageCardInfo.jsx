@@ -1,10 +1,11 @@
-import { Box, Typography,  Button }from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import PackageCard from "@/src/components/Home/PackageCard";
 
 const packages = [
   {
     title: "Fit India Basic Health Checkup",
-    description: "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
+    description:
+      "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
     price: 799,
     oldPrice: 2500,
     fasting: "Fasting Required 10 Hours",
@@ -15,7 +16,8 @@ const packages = [
   },
   {
     title: "Fit India Basic Health Checkup",
-    description: "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
+    description:
+      "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
     price: 799,
     oldPrice: 2500,
     fasting: "Fasting Required 10 Hours",
@@ -24,9 +26,10 @@ const packages = [
     tag: "Packages",
     type: "For Male & Female",
   },
-    {
+  {
     title: "Fit India Basic Health Checkup",
-    description: "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
+    description:
+      "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
     price: 799,
     oldPrice: 2500,
     fasting: "Fasting Required 10 Hours",
@@ -35,9 +38,10 @@ const packages = [
     tag: "Packages",
     type: "For Male & Female",
   },
-    {
+  {
     title: "Fit India Basic Health Checkup",
-    description: "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
+    description:
+      "Test included: Random Blood Sugar, Liver Function Test, Urine Routine...",
     price: 799,
     oldPrice: 2500,
     fasting: "Fasting Required 10 Hours",
@@ -51,31 +55,41 @@ const packages = [
 const PackageCardInfo = () => {
   return (
     <>
-    <Box
+      <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "flex-start",
           mb: 3,
-          mt:4,
+          mt: 4,
         }}
       >
-        <Box style={{ marginLeft:"20px" }}>
-          <Typography variant="h5" fontWeight="bold">
-            Advanced Diagnostic Tests for Your Body’s Vital Organs
+        <Box style={{ marginLeft: "40px" }}>
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            style={{ color: "#003236" }}
+          >
+            Top Booked Health Checkup Packages
           </Typography>
           <Typography variant="body2" sx={{ mt: 0.5, color: "gray" }}>
-            Explore our comprehensive range of diagnostic tests tailored for vital body organs.
+            Chosen by Doctors, Trusted by Patients.
           </Typography>
         </Box>
 
-        <Button variant="outlined"
-        style={{ marginRight:"30px" }} 
-        >
+        <Button variant="outlined" style={{ marginRight: "30px" }}>
           View All
         </Button>
       </Box>
-      <Box sx={{ display: "flex", gap: 3, margin:4, overflowX: "auto", justifyContent:"space-between" }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 3,
+          margin: 4,
+          overflowX: "auto",
+          justifyContent: "space-between",
+        }}
+      >
         {packages.map((item, index) => (
           <PackageCard
             key={index}
@@ -91,7 +105,7 @@ const PackageCardInfo = () => {
           />
         ))}
       </Box>
-</>
+    </>
   );
 };
 
